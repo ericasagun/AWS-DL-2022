@@ -13,6 +13,10 @@ os. environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 columns = pd.read_csv('./datasets/featured_df.csv', nrows=1).columns.tolist()
 
+print('Importing model')
+model = tf.keras.models.load_model('./models/action_item.h5')
+print('Model imported!')
+
 def pred_sent(sentence):
     """
     Predicts action items per sentence
@@ -23,9 +27,6 @@ def pred_sent(sentence):
     Returns:
         array: probability
     """
-    print('Importing model')
-    model = tf.keras.models.load_model('./models/action_item.h5')
-    print('Model imported!')
     print('Predicting...')
     results = model.predict(sentence)
     return results
