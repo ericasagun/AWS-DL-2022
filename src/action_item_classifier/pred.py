@@ -1,7 +1,10 @@
 import pandas as pd
 import numpy as np
 import nltk
-nltk.download('punkt')
+
+if not dir(nltk.punkt):
+    nltk.download('punkt')
+
 from nltk.tokenize import sent_tokenize
 from action_item_classifier.preprocess import create_spacy_docs, get_pos, featurize
 import tensorflow as tf
@@ -10,14 +13,34 @@ os. environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 columns = pd.read_csv('./datasets/featured_df.csv', nrows=1).columns.tolist()
 
-def pred_sent(df):
+def pred_sent(sentence):
+    """
+    Predicts action items per sentence
+
+    Args:
+        string: sentence
+
+    Returns:
+        array: probability
+    """
     print('Importing model')
     model = tf.keras.models.load_model('./models/action_item.h5')
-    results = model.predict(df)
+    print('Model imported!')
+    print('Predicting...')
+    results = model.predict(sentence)
     return results
 
     
 def pred_action_items(text):
+    """
+    Returns action items per summary
+
+    Args:
+        string: summary
+
+    Returns:
+        list: action items
+    """
     print('Preprocessing data')
     sentences = sent_tokenize(text)
     sentence_list = []
@@ -34,10 +57,3 @@ def pred_action_items(text):
         action_items.append(sentence_list[i][0])
 
     return action_items
-
-
-
-
-    #     if pred_sent:
-    #         action_items.appent(sent)
-    # return action_items
