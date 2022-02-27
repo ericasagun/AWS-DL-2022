@@ -70,7 +70,7 @@ model.train(train_df=train_df,
 print("Fine tuning T5 model done!")
 
 best_model_path = [dir for dir in os.listdir("models/") if os.path.isdir(dir)][-1]
-model.load_model("models/" + best_model_path, use_gpu=False) # use_gpu set to false?
+model.load_model("models/" + best_model_path, use_gpu=False)
 
 print("Testing T5 model...")
 convos = test_df["source_text"]
