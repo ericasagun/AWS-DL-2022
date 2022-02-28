@@ -62,6 +62,7 @@ def create_spacy_docs(list):
 def featurize(doc):
     """
     Creates a dictionary of PoS tags and frequency
+    Reference: https://iconix.github.io/portfolio%20building/2017/09/25/nlp-for-tasks
 
     Args:
         list item: converted spacy docs
