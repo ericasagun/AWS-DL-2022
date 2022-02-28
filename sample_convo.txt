@@ -1,11 +1,8 @@
-Hal: Have you got any homework for tomorrow? 
-Amy: no dad Hal: ru sure? 
-Amy: told ya 
-Hal: You know mum's not home today. 
-Amy: I know, I can use the microwave 
-Hal: good girl. I'll be home around 6 
-Amy: yeah right Hal: what do you mean Amy: sry dad but you're never ever home at 6 
-Hal: i suppose you;re right. but I'll try today Amy: ok. can I go to Alex? 
-Hal: ok, but be back home before 7. we'll have dinner together 
-Amy: ok dad 
-Hal: and if you really have no homework to do Amy: sure thing dad
+Aldrin: Good morning! Let's start our morning meeting. Any updates from anyone?
+Erica: Yestreday, I trained the action item classifier. I will continue on improving the model That's all.
+Myra: Currently, I am fine tuning a summarizer model and will test afterwards. That's it from me.
+Aldrin: Thank you for the updates. Let's prepare our demo materials. By the way, Erica please send experiment reports, I'm looking forward to it.
+Erica: Sure, I'll submit the experiment report.
+Aldrin: Also, Myra kindly help me review several pending pull requests. Do you have time?
+Myra: Yup, I have time. I'll assist with the review.
+Aldrin: Sounds good. See you around!
