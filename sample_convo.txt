@@ -1,6 +1,6 @@
 Aldrin: Good morning! Let's start our morning meeting. Any updates from anyone?
 Erica: Yestreday, I trained the action item classifier. I will continue on improving the model That's all.
-Myra: Currently, I am fine tuning a summarizer model and will test afterwards. That's it from me.
+Myra: Currently, I am retraining a summarizer model and will test afterwards. That's it from me.
 Aldrin: Thank you for the updates. Let's prepare our demo materials. By the way, Erica please send experiment reports, I'm looking forward to it.
 Erica: Sure, I'll submit the experiment report.
 Aldrin: Also, Myra kindly help me review several pending pull requests. Do you have time?
