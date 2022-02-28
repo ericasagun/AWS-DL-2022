@@ -2,8 +2,7 @@ import pandas as pd
 import numpy as np
 import nltk
 
-if not dir(nltk.punkt):
-    nltk.download('punkt')
+nltk.download('punkt')
 
 from nltk.tokenize import sent_tokenize
 from action_item_classifier.preprocess import create_spacy_docs, get_pos, featurize
