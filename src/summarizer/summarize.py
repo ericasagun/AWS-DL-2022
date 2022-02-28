@@ -1,5 +1,6 @@
 from simplet5 import SimpleT5
 import os 
+os. environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 print("Loading fine-tuned T5 model")
 model = SimpleT5()
