@@ -6,9 +6,10 @@ f = open(filename, 'r')
 input_text = f.read()
 
 summary = generate_summary(input_text)
+print()
 action_items = pred_action_items(summary)
-print('SUMMARY:', summary)
+print('\nSUMMARY:', summary)
 if not action_items:
-    print("No action items!")
+    print("\nNo action items!")
 else:
-    print('ACTION ITEMS:', action_items)
+    print('\nACTION ITEMS:', action_items)
