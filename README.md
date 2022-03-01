@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. (Optional) train models
+1. Train models. Expected summarizer model size is ~2.5GB.
 ```bash
 python src/action_item_classifier/train_classifier.py
 python src/summarizer/train_summarizer.py
